@@ -37,8 +37,46 @@ footer {
 .footer {
   margin: 0;
   cursor: pointer;
+  font-size: 0.5rem;
 }
 
 .footer:hover {
   text-decoration: underline;
+}
+
+/* -------------------- */
+/*  Responsive Styles */
+/* -------------------- */
+
+/* Tablettes */
+@media (max-width: 992px) {
+  .footerContainer {
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .titreFooter {
+    font-size: 1rem;
+  }
+
+  .infoFooter {
+    align-items: center;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  footer {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .titreFooter {
+    font-size: 0.95rem;
+  }
+
+  .infoFooter {
+    font-size: 0.85rem;
+    gap: 0.2rem;
+  }
 }

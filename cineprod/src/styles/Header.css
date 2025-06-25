@@ -4,8 +4,8 @@
   position: fixed;    
   top: 0;
   left: 0;
-  width: 90%;         
-  background-color: rgba(0, 0, 0, 0.222);
+  width: 100%;         
+  background-color: rgba(0, 0, 0, 0.37);
   padding: 1rem 2rem;
   color: white;
   display: flex;
@@ -45,4 +45,65 @@ main {
 .logo{
     width: 5rem;
     margin-right: 1rem;
+}
+
+.profil{
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.nav-links a.active {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* -------------------- */
+/* Responsive Styles */
+/* -------------------- */
+
+/* Tablettes */
+@media (max-width: 992px) {
+  .TitreHeader {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(62, 62, 62);
+
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .TitreHeader {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 3.5rem;
+  }
+
+  .profil {
+    width: 1.5rem;
+  }
 }

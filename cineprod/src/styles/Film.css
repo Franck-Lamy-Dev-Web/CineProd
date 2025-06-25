@@ -1,0 +1,135 @@
+/* src/styles/Film.css */
+
+body {
+  background-color: #1e1e2f;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.films-container {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.film-title {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.film-card {
+  background: linear-gradient(135deg, #2d2d3f, #3b3b51);
+  border-radius: 16px;
+  padding: 1.8rem 1.5rem;
+  color: #f1f1f1;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.film-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.film-name {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.film-card p {
+  font-size: 0.95rem;
+  margin: 0.4rem 0;
+  color: #ddd;
+}
+
+.film-card span {
+  font-weight: 600;
+  color: #bbb;
+}
+
+.status-message {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+.statut {
+  margin-top: 1rem;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #444;
+}
+
+.statut {
+  margin-top: 1rem;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #444;
+  color: white;
+}
+
+/* Statuts personnalisés */
+.statut.planifié {
+  background-color: #3498db; /* bleu */
+}
+
+.statut.en-cours {
+  background-color: #f39c12; /* orange */
+}
+
+.statut.terminé {
+  background-color: #2ecc71; /* vert */
+}
+
+.statut.non-planifié {
+  background-color: #e74c3c; /* rouge */
+}
+
+/* --------------------- */
+/*  Responsive Design  */
+/* --------------------- */
+
+/* Tablettes : 2 colonnes */
+@media (max-width: 992px) {
+  .film-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobiles : 1 colonne */
+@media (max-width: 600px) {
+  .film-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .films-container {
+    padding: 2rem 1rem;
+  }
+
+  .film-title {
+    font-size: 1.8rem;
+  }
+
+  .film-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .film-name {
+    font-size: 1.2rem;
+  }
+}
